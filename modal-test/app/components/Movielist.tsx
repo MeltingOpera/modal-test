@@ -11,7 +11,7 @@ export default async function Movielist() {
     <div>
       <div className="grid grid-cols-fluid gap-16">
         {res.results.map((movies: any) => (
-          <Link href={`movie/${JSON.stringify(movies.id)}`}>
+          <Link href={`movie/${JSON.stringify(movies.id)}`} key={movies.id}>
             <div className="bg-white rounded-md p-3 shadow-md">
               <Image
                 className="rounded-md w-full mb-4"

@@ -16,6 +16,7 @@ export default async function Movielist() {
             id={movies.id}
             title={movies.title}
             image={movies.poster_path}
+            key={movies.id}
           />
         ))}
       </div>

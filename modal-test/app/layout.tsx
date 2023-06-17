@@ -19,7 +19,6 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <main className="bg-slate-200 px-5 py-10">{children}</main>
-
         {modal}
       </body>
     </html>

@@ -15,11 +15,9 @@ export default function Modal({ children }: { children: any }) {
   return (
     <Dialog.Root open onOpenChange={handleOnOpenChange}>
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 bg-black/70 grid overflow-y-auto" />
-
-        <Dialog.DialogContent className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-          {children}
-        </Dialog.DialogContent>
+        <Dialog.Overlay className="fixed flex justify-center align-middle inset-0 bg-black/70 overflow-y-auto">
+          <Dialog.Content className="max-w-xs">{children}</Dialog.Content>
+        </Dialog.Overlay>
       </Dialog.Portal>
     </Dialog.Root>
   );

@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
 import MovieCard from "./MovieCard";
 
 export default async function Movielist() {
